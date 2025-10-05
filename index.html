@@ -310,82 +310,93 @@ nav ul li a:hover {
   margin: 0;
   font-size: 15px;
 }
-/*for Mobile Devices */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: row;
-    height: auto;
-    padding: 10px 20px;
-  }
+/* Media Queries */
+@media (max-width: 900px) {
+    nav {
+        padding: 0 15px;
+        height: 60px;
+    }
 
-  nav ul {
-    flex-direction: row;
-    gap: 15px;
-    margin-top: 10px;
-  }
+    .section1 {
+        flex-direction: column;
+        padding: 40px 10px;
+        gap: 25px;
+    }
 
-  .section1 {
-    flex-direction: column;
-    padding: 40px 20px;
-    gap: 30px;
-  }
+    .left-S1,
+    .right-S1 {
+        flex-basis: 100%;
+        font-size: 1.1rem;
+    }
 
-  .left-S1,
-  .right-S1 {
-    flex: 1 1 100%;
-    text-align: center;
-  }
+    .right-S1 img {
+        width: 100%;
+        max-width: 320px;
+    }
 
-  .left-S1 {
-    font-size: 1.2rem;
-  }
+    .hr-2 {
+        margin: 60px auto;
+        width: 95%;
+    }
 
-  .right-S1 img {
-    width: 100%;
-    max-width: 300px;
-  }
+    #skills,
+    #projects {
+        padding: 50px 10px;
+    }
 
-  main hr,
-  .hr-2 {
-    margin: 60px auto;
-    width: 90%;
-  }
+    .skills-grid,
+    .projects-grid {
+        gap: 15px;
+    }
 
-  #skills h2,
-  #projects h2 {
-    font-size: 2rem;
-  }
-
-  .skills-grid,
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .skill-card,
-  .project-card {
-    margin: 0 auto;
-  }
-
-  .contact-container {
-    padding: 30px 20px;
-  }
-
-  .contact-container h2 {
-    font-size: 24px;
-  }
-
-  .contact-container p {
-    font-size: 15px;
-  }
-
-  .site-footer {
-    padding: 15px 10px;
-  }
-
-  .footer-content p {
-    font-size: 10px;
-  }
+    .contact-container {
+        padding: 20px;
+    }
 }
+    
+@media (max-width: 600px) {
+    nav ul {
+        gap: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 5px;
+    }
+
+    .left-N {
+        font-size: 1.1rem;
+    }
+
+    .section1 {
+        padding: 25px 5px;
+    }
+
+    .right-S1 img {
+        max-width: 95vw;
+    }
+
+    #skills h2,
+    #projects h2,
+    .contact-container h2 {
+        font-size: 1.4rem;
+    }
+
+    .projects-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card img {
+        height: 140px;
+    }
+
+    .footer-content p {
+        font-size: 15px;
+    }
+}
+
   </style>
 </head>
 
@@ -505,3 +516,4 @@ nav ul li a:hover {
 
 
 </html>
+
